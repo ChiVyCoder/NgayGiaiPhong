@@ -1,0 +1,41 @@
+.hero-container {
+    margin-top: 20px;
+}
+
+.hero-title {
+    display: flex;
+    align-items: center;
+}
+
+.hero-name {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.circle-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 8px;
+}
+
+.hero-image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 16px 0;
+}
+
+.hero-img {
+    width: 300px;
+    height: auto;
+}
+
+.hero-image-desc {
+    max-width: 300px;
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+}

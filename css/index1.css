@@ -1,0 +1,13 @@
+/* CSS BODY   =========================== */
+.image-container {
+    margin-top: 16px;
+}
+
+.image-item {
+    width: 900px;
+    height: auto;
+}
+
+.image-item + .image-item {
+    margin-top: 20px;
+}

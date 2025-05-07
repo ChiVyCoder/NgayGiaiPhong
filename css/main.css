@@ -1,0 +1,503 @@
+  /* CSS Header ==================================== */
+  .header-background {
+    position: relative;
+    z-index: 2;
+  }
+  .home-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+    
+  .logo {
+    width: 250px;
+  }
+
+  .header-slogan {
+    font-family: 'Dancing-Script', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute;
+    text-shadow: 0 1px 1px #ccc ;
+    top: 60%;
+    right: 120px;
+  }
+
+  .header-container {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    padding: 20px 120px;
+    top: 20px;
+    width: 100%;
+    z-index: 100;
+  }
+
+
+  /* CSS HEADER ============================= */
+
+  /* CSS BODY =============================== */
+
+  .padding {
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(#350f0f, #0b0909, rgb(15, 15, 15));
+  }
+
+  .body {
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .fadeIn-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.9s ease-out;
+  }
+  
+  .fadeIn-text.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .return-btn {
+    position: fixed;
+    bottom: 80px;
+    z-index: 10;
+    right: 60px;
+  }
+
+  .return-btn i {
+    font-size: 40px;
+    color: #d43131;
+  }
+
+  .return-btn i:hover {
+    color: #a93737;
+  }
+
+  .body-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .body-timeline {
+    background: linear-gradient(to left, #2C2C2C, #0F0F0F);
+    padding: 0 120px;
+  }
+  .body-title {
+    font-family: 'Dancing-Script', sans-serif;
+    font-size: 40px;
+  }
+
+  .body-slogan {
+    font-family: 'Montserrat-Bold';
+    font-size: 25px;
+  }
+
+  .timeline-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 2000px;
+  }  
+
+  .timeline {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #555;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .timeline-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: red; 
+    height: 0;
+    z-index: 1;
+    transition: height 0.2s ease-out;
+  }
+
+  .historicalPeriod {
+    display: flex;
+    width: 100%;
+    height: 600px;
+  }
+
+  .historicalPeriod + .historicalPeriod {
+    margin-top: 100px;
+  }
+
+  .historicalPeriod-content, .historicalPeriod-img {
+    width: 50%;
+    height: inherit;
+    padding: 10px;
+    padding: 30px;
+  }
+
+  .historicalPeriod-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .historicalPeriod-year {
+    font-size: 22px;
+    margin: 10px;
+  }
+
+  .historicalPeriod-event {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .event-1 {
+    position: relative;
+    height: inherit;
+  }
+
+  .historicalPeriod1-img-Hungking {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    top: 80px;
+    z-index: 1;
+  }
+
+  @keyframes flyCurve {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  }
+
+  .historicalPeriod1-img-chimLac1 {
+    position: absolute;
+    width: 260px;
+    right: 24px;
+    transform: rotate(-32deg);
+  }
+
+  .historicalPeriod1-img-chimLac2 {
+    position: absolute;
+    width: 200px;
+    bottom: 60px;
+    left: -400px;
+    transform: rotate(-20deg);
+    z-index: 10;
+    offset-path: path("M0,0 C230,-100 470,100 700,0");
+    offset-rotate: auto; 
+    animation: flyCurve 15s ease-in-out infinite;
+  } 
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+    } 
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes move {
+    0% {
+      transform: translate(-300px, -1030px) scale(0.7);
+    }
+    100% {
+      transform: translate(-100px, -1030px) scale(0.7);
+    }
+  }
+
+  .background-spike {
+    width: 350px;
+    height: auto;
+    transform: translate(150px, 100px);
+    animation: appear 3s linear infinite;
+  }
+
+  .battleship {
+    scale: 0.8;
+    transform: translate(108px, -430px);
+  }
+
+  .tran-hung-dao {
+    scale: 0.7;
+    transform: translate(-300px, -1030px);
+    animation: move 5s ease-in infinite;
+  }
+
+
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    } 
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .historicalPeriod1-img-trongDong {
+    position: absolute;
+    top: 50px;
+    z-index: 0;
+    left: 106px;
+    animation: spin linear 7s infinite;
+  }
+
+  .event-2, .event-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .le-loi {
+    scale: 0.8;
+  }
+
+  .le-loi-title {
+    font-size: 20px;
+  }
+
+  .event-3 {
+    justify-content: space-between;
+  }
+
+  .vua-quang-trung {
+    scale: 0.6;
+  }
+
+  .vua-quang-trung-title {
+    transform: translateY(-65px);
+  }
+
+  .event-5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .event-5 div {
+    text-align: center;
+    
+  }
+
+  .event-5 strong {
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .nguyen-thien-thuat, .ton-that-thuyet, .phan-dinh-phung {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .event-6 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .hinh-anh-bac-ho-doc-ban-tuyen-ngon-doc-lap {
+    scale: 0.8;
+  }
+
+  .dai-tuong-vo-nguyen-giap {
+    scale: 0.6;
+    transform: translate(400px, -805px);
+  }
+
+  .chien-thang-dien-bien-phu {
+    scale: 0.8;
+    transform: translateY(50px);
+  }
+
+  /*NỘI DUNG CHÍNH - GIỚI THIỆU NGÀY GIẢI PHÓNG 30/4/1975  =========================== */
+
+  .southernLiberationDay-container {
+    color: #393535;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .southernLiberationDay-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%; 
+    height: 385px;
+    position: relative;
+  }
+
+  .southernLiberationDay-content {
+    padding: 50px 120px;
+  }
+  
+  .sLD-header-background {
+    background-image: url(../assets/images/background-header-ngp1-removebg-preview.png);
+    height: 304px;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+  .sDL-header-title {
+    position: absolute;
+    text-align: center;
+    font-size: 55px;
+    color: #ffd052;
+    font-weight: bold;
+    white-space: normal;  
+    display: block;     
+    text-shadow: #2C2C2C 5px 2px;  
+  }
+
+  .sDL-layoutTI { 
+    display: flex;
+    align-items: center;
+  }
+  /* TI là Text Image */
+  .sDLlayoutTI-img {
+    flex: 1;
+    width: 415px;
+  }
+
+  .sDLlayoutTI-text {
+    flex: 1;
+    padding: 0 16px 0;
+  }
+
+
+  .sDL-content2, .sDL-content4 {
+    padding: 40px 100px;
+  }
+
+  .sDL-content3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sDL-content3 img {
+    width: 400px;
+  }
+
+  /* TƯ LIỆU LỊCH SỬ NGÀY GIẢI PHÓNG */
+  .historicalDocuments-container {
+    padding: 50px 120px;
+    color: #1a1a1a;
+  }
+
+  .historicalDocuments-title {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #9A570E;
+  }
+
+  .line-decorate {
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .line-decorate-left, .line-decorate-right {
+    width: 400px;
+    height: 4px;
+    background-color: #9A570E;
+  }
+
+  @keyframes blink {
+    to {
+      scale: 1.05;
+      color: #ffd052;
+    }
+  }
+
+  .star-decorate {
+    font-size: 35px;
+    color: #f2cf5a;
+    transition:all linear;
+    animation: blink 2s linear infinite;
+  }
+
+  .historicalDocuments-body {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-around;
+  }
+
+  .card-container {
+    height: 450px;
+    width: 270px;
+    border-radius: 8px;
+    border: 2px solid #252525;
+    box-shadow: 6px 4px #eee;
+    cursor: pointer;
+    transition: all linear 0.3s;
+  }
+
+  .card-container:hover {
+    box-shadow: 8px 6px #ddd;
+    scale: 1.02;
+  }
+
+  .card-top {
+    height: 280px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .card-bottom {
+    font-size: 16px;
+    height: 170px;
+    padding: 12px;
+    color: #fff;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background: linear-gradient(to bottom, #580404, #951818);
+
+
+  }
+
+  .card-title {
+    font-weight: 600;
+    color: #f4cd58;
+  }
+
+  .card-top-background {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  

@@ -1,0 +1,27 @@
+.story-title {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 900px;
+    margin-top: 12px;
+}
+
+.circle-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 8px;
+}
+
+.storyteller-img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.storyteller-desc {
+    max-width: 350px;
+    font-style: italic;
+}
