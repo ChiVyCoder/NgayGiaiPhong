@@ -63,8 +63,6 @@ texts.forEach(text => observer.observe(text));
 
 const likeBtn = $('.like-icon')
 const dislikeBtn = $('.dislike-icon')
-console.log(likeBtn.classList);
-
 
 likeBtn.onclick = () => {
   if (likeBtn.classList.contains('active'))
